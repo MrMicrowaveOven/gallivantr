@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Dimensions, Text, StyleSheet, View, Image, TouchableWithoutFeedback } from 'react-native';
-import MapView from 'react-native-maps';
-import {Marker} from 'react-native-maps';
-import DetailsWindow from 'gallivantr/components/overlays/DetailsWindow.js'
+// import MapView from 'react-native-maps';
+// import {Marker} from 'react-native-maps';
+// import DetailsWindow from 'gallivantr/components/overlays/DetailsWindow.js'
 
 const Map = (props) => {
   const {location, info, numLocations, phase, openDetails, closeDetails} = props
@@ -180,11 +180,11 @@ const Map = (props) => {
 
   return (
     <View style={[styles.container, {marginBottom: mapMargin}]}>
-      {showMapButtons &&  <TouchableWithoutFeedback onPress={showLocationAndSpot}>
+      {/* {showMapButtons &&  <TouchableWithoutFeedback onPress={showLocationAndSpot}>
                             <View style={styles.recenterButton}>
                               <Image
                                 style={styles.recenterImage}
-                                source={require("gallivantr/assets/recenter.png")}
+                                source={require("./assets/recenter.png")}
                               />
                             </View>
                           </TouchableWithoutFeedback>}
@@ -192,11 +192,11 @@ const Map = (props) => {
                             <View style={styles.refreshButton}>
                               <Image
                                 style={styles.refreshImage}
-                                source={require("gallivantr/assets/refresh.png")}
+                                source={require("./assets/refresh.png")}
                               />
                             </View>
-                          </TouchableWithoutFeedback>}
-      <MapView
+                          </TouchableWithoutFeedback>} */}
+      {/* <MapView
         ref={mapRef}
         style={styles.mapStyle}
         initialRegion={{
@@ -214,8 +214,8 @@ const Map = (props) => {
                       longitude: spot.geometry.location.lng }}
                   />}
 
-      </MapView>
-      {phase === 6 && <DetailsWindow spot={spot} photoUrls={photoUrls} closeDetailsWindow={closeDetailsWindow}/>}
+      </MapView> */}
+      {/* {phase === 6 && <DetailsWindow spot={spot} photoUrls={photoUrls} closeDetailsWindow={closeDetailsWindow}/>} */}
     </View>
   );
 }
