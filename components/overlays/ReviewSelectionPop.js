@@ -12,7 +12,7 @@ const ReviewSelectionPop = (props) => {
     <View>
       <TouchableWithoutFeedback onPress={minimize}>
         <View style={styles.minimizeButton}>
-          <Image style={styles.minimizeButtonImage} source={require('gallivantr/assets/iconDownArrow.png')} />
+          <Image style={styles.minimizeButtonImage} source={require('../../assets/iconDownArrow.png')} />
         </View>
       </TouchableWithoutFeedback>
       <View style={styles.threeBoxes}>

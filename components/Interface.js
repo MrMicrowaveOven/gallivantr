@@ -63,7 +63,7 @@ const Interface = (props) => {
   return (
     <View style={overlayStyle}>
       {phase < 4 && <TouchableWithoutFeedback onPress={backward}>
-        <Image source={require('gallivantr/assets/iconBackButton.png')} style={[styles.backButton]} />
+        <Image source={require('../assets/iconBackButton.png')} style={[styles.backButton]} />
       </TouchableWithoutFeedback>}
       {[
         <StartingLocationOverlay forward={forward}/>,

@@ -1,11 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Dimensions, Text, StyleSheet, View, Image, TouchableWithoutFeedback } from 'react-native';
-// import MapView from 'react-native-maps';
-// import {Marker} from 'react-native-maps';
+import MapView from 'react-native-maps';
+import {Marker} from 'react-native-maps';
 // import DetailsWindow from 'gallivantr/components/overlays/DetailsWindow.js'
 
 const Map = (props) => {
-  const {location, info, numLocations, phase, openDetails, closeDetails} = props
+  const {
+    // location,
+    info, numLocations, phase, openDetails, closeDetails} = props
 
   const mapMargin = 1
   const [spot, setSpot] = useState(null);
@@ -110,8 +112,20 @@ const Map = (props) => {
     })
   }
 
+  location = {
+    coords: {
+      latitude: 41.5,
+      longitude: -87.7
+    }
+  }
   if(!location) {
-    return null
+    location = {
+      coords: {
+        latitude: 41.5,
+        longitude: -87.7
+      }
+    }
+    // return null
   }
 
   const latitude = location.coords.latitude
@@ -196,7 +210,7 @@ const Map = (props) => {
                               />
                             </View>
                           </TouchableWithoutFeedback>} */}
-      {/* <MapView
+      <MapView
         ref={mapRef}
         style={styles.mapStyle}
         initialRegion={{
@@ -214,7 +228,7 @@ const Map = (props) => {
                       longitude: spot.geometry.location.lng }}
                   />}
 
-      </MapView> */}
+      </MapView>
       {/* {phase === 6 && <DetailsWindow spot={spot} photoUrls={photoUrls} closeDetailsWindow={closeDetailsWindow}/>} */}
     </View>
   );
@@ -259,6 +273,8 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+    // width: 100,
+    // height: 100,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',

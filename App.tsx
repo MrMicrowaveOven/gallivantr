@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Dimensions, StyleSheet, Text, View } from 'react-native';
 import Map from './components/Map.js'
-// import Interface from './components/Interface.js'
+import Interface from './components/Interface.js'
 // import * as Location from 'expo-location';
 
 // ErrorUtils.setGlobalHandler((error, isFatal) => {
@@ -98,10 +98,10 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
-    // backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center'
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 });
 
