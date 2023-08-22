@@ -13,7 +13,7 @@ const StartingLocationOverlay = (props) => {
       <Text style={styles.text}>Find My Location</Text>
       <View style={styles.locationImageView}>
         <TouchableWithoutFeedback onPress={moveForward}>
-            <Image style={styles.locationImage} source={require('gallivantr/assets/buttons/search.png')}/>
+            <Image style={styles.locationImage} source={require('../../assets/buttons/search.png')}/>
         </TouchableWithoutFeedback>
       </View>
     </View>

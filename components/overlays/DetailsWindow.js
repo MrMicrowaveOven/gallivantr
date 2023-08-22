@@ -23,7 +23,7 @@ const DetailsWindow = (props) => {
       <Image source={{uri: photoUrls[0]}} style={styles.locationImage}/>
       <TouchableWithoutFeedback onPress={closeDetailsWindow}>
         <View style={styles.closeButton}>
-          <Image source={require('gallivantr/assets/marker.png')} style={styles.closeButtonImage}/>
+          <Image source={require('../../assets/marker.png')} style={styles.closeButtonImage}/>
         </View>
       </TouchableWithoutFeedback>
       <View style={styles.detailsContent}>

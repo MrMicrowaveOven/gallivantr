@@ -84,14 +84,14 @@ const App = () => {
         openDetails={() => setPhase(6)}
         closeDetails={() => setPhase(4)}
       />
-      {/* <Interface
+      <Interface
         forward={forward}
         backward={backward}
         phase={phase}
         setPhase={(param) => setPhase(param)}
         setInfo={setInfoProps}
         martiniOClock={martiniOClock}
-      /> */}
+      />
     </View>
   );
 }

@@ -11,7 +11,7 @@ const Minimized = (props) => {
     <View>
       <TouchableWithoutFeedback onPress={restore}>
         <View style={styles.restoreButton}>
-          <Image style={styles.restoreButtonImage} source={require('gallivantr/assets/iconUpArrow.png')} />
+          <Image style={styles.restoreButtonImage} source={require('../../assets/iconUpArrow.png')} />
         </View>
       </TouchableWithoutFeedback>
     </View>
